@@ -1,8 +1,6 @@
 const ItemService = ({
     icon,
     title,
-    text,
-    url,
 }) => {
     return (
         <div className="w-full flex items-center mt-3 h-auto">

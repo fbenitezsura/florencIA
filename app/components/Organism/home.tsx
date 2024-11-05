@@ -36,9 +36,10 @@ const Home = () => {
                 </div>
                 <div className="flex md:ml-[110px]">
                     <div className="flex flex-col max-w-[400px]">
-                        {itemAction.map((item) => {
+                        {itemAction.map((item, index) => {
                             return (
                                 <ItemActions
+                                    key={index}
                                     icon={item.icon}
                                     title={item.title}
                                     text={item.text}
@@ -64,9 +65,9 @@ const Home = () => {
                         {itemService.map((item) => {
                             return (
                                 <ItemServices
+                                    key={item.title}
                                     icon={item.icon}
                                     title={item.title}
-                                    text={item.text}
                                     url={item.url}
                                 />
                             )

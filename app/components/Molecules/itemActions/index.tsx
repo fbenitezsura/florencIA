@@ -1,8 +1,7 @@
 const ItemActions = ({
     icon,
     title,
-    text,
-    url,
+    text
 }) => {
     return (
         <div className="w-full flex mt-3">
